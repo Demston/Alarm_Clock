@@ -39,14 +39,14 @@ root.resizable(False, False)
 
 
 def quit_window(icon, item):
-    """функции для сворачивания в трей"""
+    """Сворачивание в трей"""
     # icon.stop()
     # root.destroy()
     pass
 
 
 def show_window(icon, item):
-    """функции для разворачивания из трея"""
+    """Разворачивание из трея"""
     icon.stop()
     root.after(0, root.deiconify)
 
@@ -81,7 +81,7 @@ def withdraw_window():
     icon.run_detached()  # Очень важный момент, программа работает в отдельном потоке
 
 
-# день, время, напоминание
+# День, время, напоминание
 alarm_day = ''
 alarm_time = ''
 task_text = ''
